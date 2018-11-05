@@ -1,0 +1,67 @@
+
+<script type="text/javascript" src="../script/jquery.min.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../script/jquery-1.9.11.html"></script>
+<script type="text/javascript" src="../script/share_email.js"></script>
+
+<form action="http://www.dcbbank.com/index/email" name="shareEmailForm" id="shareEmailForm" method="post">
+
+<div style="padding: 10px;margin-bottom:15px;">
+	<div style="text-align:right">
+            <a href="javascript: void window.close();">
+               <img src="../images/close.jpg" border="0" alt="" title="Close Window" />
+            </a>
+	</div>
+        
+        <p class="validate_msg"><strong>Please fix the errors below! </strong></p>
+        
+             
+	<div class="componentheading">
+		<strong>E-mail this link to a friend.</strong>	</div>
+
+	<p>
+		E-mail to:
+		<br />
+		
+<input type="text" name="emailto" id="emailto" value="" class="txtfield" placeholder="Email ID *" />                <span class="val_emailto"></span>
+	</p>
+
+	<p>
+		Sender:
+		<br />
+		
+<input type="text" name="sender" id="sender" value="" class="txtfield" placeholder="Sender *" />                <span class="val_sender"></span>
+	</p>
+
+	<p>
+		Your E-mail:
+		<br />
+		
+<input type="text" name="emailfrom" id="emailfrom" value="" class="txtfield" placeholder="Your Email *" />                <span class="val_emailfrom"></span>
+	</p>
+
+	<p>
+		Subject:
+		<br />
+		
+<input type="text" name="subject" id="subject" value="" class="txtfield" placeholder="Subject *" />                <span class="val_subject"></span>
+	</p>
+        
+        <p>
+		Message:
+		<br />
+		
+<textarea name="message" id="message" class="txtfield1" rows="3" cols="15" placeholder="Message *"></textarea>                <span class="val_message"></span>
+	</p>
+
+	<p>
+	    <input type="submit" name="submit" value="Send" class="nextbtn">
+            <input type="button" name="cancel" value="Cancel" class="nextbtn" onclick="window.close();return false;">
+	</p>
+</div>
+</form>
+<script>
+$(document).ready(function(){
+  $(".validate_msg").hide(); 
+});
+</script>
