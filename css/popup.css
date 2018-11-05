@@ -1,0 +1,153 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	padding: 0px;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.lt{ float:left;}
+.rt{ float:right;}
+.cl{ clear:both; }
+
+
+.pop_container{
+	width:30%;
+	margin:auto;
+	border:#808080 solid 1px;
+	text-align:center;
+	position:absolute;
+	background:#FFF;
+	display:none;
+	z-index:999;
+	top:15%;
+	left:35%;	
+}
+	
+.pop_container h1 span{
+	margin:0px;
+	padding:5px 0 5px 15px;
+	display:inline-block;
+	
+   }
+   
+.pop_container h1{
+	  color: #FFF;
+	  font: normal 24px Arial, Helvetica, sans-serif;
+	  background:#17479e;
+	  text-align:left;
+	  margin:0px;
+	  width:100%;}   
+   
+   	
+.pop_container p{
+	 margin:0px;
+	 color:#393939;
+	 font:normal 12px Arial, Helvetica, sans-serif;
+	 line-height:18px;
+	 text-align:left;
+	 width:100%;}
+	 
+.pop_container p span{
+	 padding:10px 15px 0px 15px;
+	 display:inline-block;
+	 margin:5px 0 15px 0;
+	}	 
+
+.Button_container{
+	width:100%;
+	float:left;
+	text-align:center;
+	margin:5px 0 20px 0;}			
+	
+.Button_container a {
+	background: #17479e;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0px 1px 5px 1px #aaa;
+    padding:5px 15px;
+    color:#ffffff;
+    font: normal 14px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+	display:inline;
+	}	
+	
+.cross_button{
+	width:25px;
+	height:25px;
+	border-radius:100%;
+	background:#17479e;
+	color:#FFF;
+	text-align:center;
+	border:#FFF solid 2px;
+	position:absolute;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	line-height:25px;
+	right:-10px;
+	top:-10px;
+	cursor:pointer;}
+	
+.cross_button a{
+	color:#FFF;
+	text-decoration:none;
+	}
+	
+	
+.me_pop_container{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:#000;
+	overflow:hidden;
+	opacity: 0.3;
+	display:none;
+	top:0px;
+	
+	
+	}
+	
+.click_me a{
+	text-decoration:none;
+	color:#000;
+	padding:5px 10px;
+	border:#CCC solid 1px;
+	margin:5px 10px;
+	display:inline-block;}	
+	
+@media screen and (min-width:650px) and (max-width:1024px){
+	.pop_container{
+	width:50%;
+	margin:auto;
+	border:#808080 solid 1px;
+	text-align:center;
+	position:absolute;
+	background:#FFF;
+	display:none;
+	z-index:999;
+	top:15%;
+	left:26%;	
+}
+	
+}
+		
+@media screen and (min-width:320px) and (max-width:640px){
+	.pop_container{
+	width:94%;
+	margin:auto;
+	border:#808080 solid 1px;
+	text-align:center;
+	position:absolute;
+	background:#FFF;
+	display:none;
+	z-index:999;
+	top:22%;
+	left:2%;	
+}
+	
+}
+
+ 
+	 

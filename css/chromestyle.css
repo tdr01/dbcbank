@@ -1,0 +1,132 @@
+.chromestyle{
+
+width: 99%;
+
+font-weight: bold;
+
+}
+
+
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+
+content: "."; 
+
+display: block; 
+
+height: 0; 
+
+clear: both; 
+
+visibility: hidden;
+
+}
+
+
+
+
+
+
+
+/* ######### Style for Drop Down Menu ######### */
+
+
+
+.dropmenudiv{
+
+position:absolute;
+
+top: 0;
+
+border: 0px solid #BBB; /*THEME CHANGE HERE*/
+
+border-bottom-width: 0;
+
+font:normal 12px Verdana;
+
+line-height:18px;
+
+z-index:100;
+
+background:url(../images/transparentBg.png) top left repeat;
+
+width: 586px;
+
+visibility: hidden;
+
+margin-left:250px;
+
+margin-top:-55px;
+
+padding:10px;
+
+behavior: url(PIE.html);
+
+}
+
+.dropmenudiv img{
+
+	border:0px;
+
+	float:left;
+
+}
+
+
+
+
+
+
+
+* html .dropmenudiv a{ /*IE only hack*/
+
+width: 100%;
+
+}
+
+
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+
+}
+
+@media only screen and (max-width: 1000px) {
+.dropmenudiv{
+
+position:absolute;
+
+top: 0;
+
+border: 0px solid #BBB; /*THEME CHANGE HERE*/
+
+border-bottom-width: 0;
+
+font:normal 12px Verdana;
+
+line-height:18px;
+
+z-index:100;
+
+background:url(../images/transparentBg.png) top left repeat;
+
+width: 586px;
+
+visibility: hidden;
+
+margin-left:0px;
+
+margin-top:0px;
+
+padding:10px;
+
+behavior: url(PIE.html);
+
+}
+}
+@media only screen and (max-width: 700px) {
+.dropmenudiv{
+
+display:none;
+
+}
+}
